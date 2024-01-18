@@ -42,3 +42,35 @@ CORS is used to manage cross-origin requests.
 16. Major difference between npm and npx is that npm is package manager and we use it to
     to install a dependency while when we want to execute that particular dependency , we use
     npx for it
+
+17. We generally avoid CDNs for calling react because CDN calling is a network call and it is
+    computationally expensive so we avoid it.
+
+18. parcel
+
+    - Dev Build
+    - Creates Local servers
+    - HMR => Hot Module Replacement
+    - HMR is achived through File watching Algoritm (written in C++)
+    - Caching - Faster build (in .parcel-cache)
+    - Image optimization
+    = Minification
+    - Bundling
+    - Compress
+    - Consistent Hashing
+    - Code Splitting
+    - Differential Bundling -> Support older browser
+    - Diagonstic
+    - Error handling
+    - https
+    - Tree shaking - removes unused code
+    - Different dev and prod bundles
+
+19. There is a common error in which when we do 'npx parcel build index.html' , it will
+    give an error becuase in package.json there is "main" mentioned as app.js and that 
+    conflicts with ur parcel build wehn u try to build it.
+
+20. When we do prod build , it builds the compressed prod build files in .dist folder and
+    those files can be pushed on to the production server
+
+

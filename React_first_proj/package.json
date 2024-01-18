@@ -2,7 +2,7 @@
   "name": "react_first_proj",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
     "test": "jest"
   },
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
   }
 }
