@@ -1,0 +1,44 @@
+1. A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+2. Crossorigin -> Web pages often make requests to load resources on other servers. Here is where CORS comes in.
+A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+CORS is used to manage cross-origin requests.
+
+3. The reason of 2 files is that First file has the core modules of react and the other file has the DOM operations of the HTML and CSS.
+
+4.  const heading = React.createElement("h1" , {} , "Hello World from React"); -> {} has the attributes inside
+    for example {id : loda}
+
+5. React.CreateElement is basically an Object and it becomes an HTML at the behind by the React
+
+6. So , React is a not a framework , but a library , this is proved even by the fact that
+   we can use react for a just a single attribute and not requiering the entire appendChild
+   to be created unlike Angular and other frameworks
+
+7. npm is the package manager for javascript.
+
+8. Dependencies are the packages on which our project is dependent on to be requiering
+
+9. Bundler basically packages your code(minifies it) so that you can ship it to production
+
+10. There are generally 2 types of Dependencies , Dev and normal , Dev is generally used in
+    Dev envrionment while we use normal one in prod.
+
+11. for example 'npm install -D parcel' -> here means we are installing parcel for the Dev
+    envrionment.
+
+12. '^' (caret) -> it automamtically updates to a minor version
+    '~' (tilde) -> it automattically updates to a major version
+
+13. Trabsitive Dependencies -> When a dependency requires another dependency to run
+
+14. If we open the folders of the node_modules , we will see each folder(dependency) , will
+    have there own package.json.
+
+15. If we have package.json and package-lock.json , we can easily get back the node_modules by just typing
+    'npm install' because npm maps from the package.json and package-lock.json and gets those Dependencies in the
+    node_modules folder
+
+16. Major difference between npm and npx is that npm is package manager and we use it to
+    to install a dependency while when we want to execute that particular dependency , we use
+    npx for it
