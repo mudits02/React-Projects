@@ -73,4 +73,18 @@ CORS is used to manage cross-origin requests.
 20. When we do prod build , it builds the compressed prod build files in .dist folder and
     those files can be pushed on to the production server
 
+21. Read about Browsers List
+
+22.  When we are doing React.createElement , we are crerating an object and for example
+    in the index.html , there is a id with heading , so that createElement will Replacement
+    the heading tag declared in the HTMl.
+
+23. JSX is not HTML in Javascript , JSX can be said as HTML like syntax
+
+24. Browsers dont understand JSX , its parcel which is doing all this for us.
+
+25. So what basically parcel is doing here is that it is transpiling the code of JSX to
+    ES6(which browsers understand) , transpiling is done by "Babel" which is a package
+    downloaded by parcel for us and used by parcel to do the transpilation.
+
 
