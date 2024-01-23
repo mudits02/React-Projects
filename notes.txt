@@ -87,4 +87,14 @@ CORS is used to manage cross-origin requests.
     ES6(which browsers understand) , transpiling is done by "Babel" which is a package
     downloaded by parcel for us and used by parcel to do the transpilation.
 
+26. In the background , both JSX adn react element are the same when transpiled.
 
+27. Babel takes the JSX and behind the scene does React.createElement. Can be checked optimization
+    babel's website
+
+28. In JSX we use camelCase as the attributes.
+
+29. We have to wrap multi line JSX code in {}
+
+30. Always remember that whenever we declare a functional component , start it with the 
+    capital letter , its the react way of understanding it.
