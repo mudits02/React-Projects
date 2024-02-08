@@ -98,3 +98,10 @@ CORS is used to manage cross-origin requests.
 
 30. Always remember that whenever we declare a functional component , start it with the 
     capital letter , its the react way of understanding it.
+
+31. Functional component is just a JS function which returns JSX.
+
+32. component compostion -> Its basically when we are injecting one component into another. 
+    when we use <component_name />
+
+33. Inside a component , if we declare '{}' , then we can write vanilla js into those curly braces.
