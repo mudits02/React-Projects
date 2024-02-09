@@ -105,3 +105,11 @@ CORS is used to manage cross-origin requests.
     when we use <component_name />
 
 33. Inside a component , if we declare '{}' , then we can write vanilla js into those curly braces.
+
+34. Using <Component_name /> , we can use this to inject a component inside an Element and using {Element_name}
+    we can inject an element into the component.
+
+35. Whenever there is data binded in the {} , JSX prevents the cross site web attacks or injection attacks.
+
+36. When we inject a component inside of a component we use <component_name /> but we can also use 
+    <component_name></component_name> like we do in HTML and it works the same

@@ -27,6 +27,7 @@ const HeadingComponent = () =>
     <div id="container">
         <Title />
         {number}
+        {jsxHeading} {/* this is how we call React elements inside of a component */}
         <h2>{100 + 200}</h2>
         <h1 className="container">Call from the functional Component</h1>
         
