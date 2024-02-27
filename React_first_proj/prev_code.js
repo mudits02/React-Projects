@@ -30,7 +30,7 @@ const HeadingComponent = () =>
         {jsxHeading} {/* this is how we call React elements inside of a component */}
         <h2>{100 + 200}</h2>
         <h1 className="container">Call from the functional Component</h1>
-        {Title()} {/* This is the another way to call a componenet inside ofa component*/ }
+        {Title()} {/* This is the another way to call a componenet inside of a component*/ }
         
     </div>
     
