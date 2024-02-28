@@ -10,6 +10,8 @@ import ReactDOM from "react-dom/client";
  *  - Search
  *  - Restaurant Container
  *      -Restaurant Card
+ *          - image
+ *          - Name of res , stars , cuisine
  * Footer
  *  - Copyright
  *  - Links
@@ -35,10 +37,26 @@ const Header = () => {
     )
 }
 
+
+const Body = () => 
+{
+    return
+    (
+        <div className="body">
+            <div className="search">Search</div>
+            <div className="res-container">Restaurant Container</div>
+        </div>
+        
+    )
+}
+
+const 
+
 const Applayout = () => {
     return(
         <div className="app">
             <Header />
+            <Body />
         </div>
     )
 }

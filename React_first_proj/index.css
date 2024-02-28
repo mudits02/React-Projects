@@ -1,4 +1,4 @@
-.heading{
+.header{
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
@@ -14,6 +14,7 @@
 }
 
 .nav-items > ul > li{
+    font-size: 24px;
     padding: 10px;
     margin: 10px;
 }
