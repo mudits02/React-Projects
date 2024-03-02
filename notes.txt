@@ -87,7 +87,7 @@ CORS is used to manage cross-origin requests.
     ES6(which browsers understand) , transpiling is done by "Babel" which is a package
     downloaded by parcel for us and used by parcel to do the transpilation.
 
-26. In the background , both JSX adn react element are the same when transpiled.
+26. In the background , both JSX and react element are the same when transpiled.
 
 27. Babel takes the JSX and behind the scene does React.createElement. Can be checked optimization
     babel's website
@@ -112,4 +112,10 @@ CORS is used to manage cross-origin requests.
 35. Whenever there is data binded in the {} , JSX prevents the cross site web attacks or injection attacks.
 
 36. When we inject a component inside of a component we use <component_name /> but we can also use 
-    <component_name></component_name> like we do in HTML and it works the same
+    <component_name></component_name> like we do in HTML and it works the same.
+
+37. We can also call a component inside of component by using {component_name()} because functional component
+    is a js function at the end of the day that returns JSX and we can technically use it as a js function.
+
+38. The code readabilty of the code is due to JSX and not React because react makes the code complicated 
+    through the entire creation by createElement process.

@@ -38,19 +38,30 @@ const Header = () => {
 }
 
 
-const Body = () => 
-{
-    return
-    (
+const Body = () => {
+    return(
         <div className="body">
             <div className="search">Search</div>
-            <div className="res-container">Restaurant Container</div>
+            <div className="res-container">
+                <RestaurantCard />
+            </div>
         </div>
         
     )
 }
 
-const 
+const RestaurantCard = () =>
+{
+    return(
+        <div className="res-card">
+            <h1>Lund Foods</h1>
+            <div className="res-img">
+
+            </div>
+        </div>
+
+    )
+}
 
 const Applayout = () => {
     return(
