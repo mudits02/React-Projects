@@ -38,30 +38,42 @@ const Header = () => {
 }
 
 
+const RestaurantCard = (props) =>
+{
+    const {resName , cuisine} = props; //This is called js Destructuring
+    return(
+        <div className="res-card" style={{backgroundColor: "#f0f0f0"}}>
+            <img className="res-logo" alt="res-logo" src="https://b.zmtcdn.com/data/pictures/8/18739658/14f7f41e1faf92f1e2b3091159b4c42b.jpg" />
+            <h3>{resName}</h3>
+            <h4>{cuisine}</h4>
+            <h4>6.9 stars</h4>
+            <h4>100 minutes</h4>
+        </div>
+
+    )
+}
+
 const Body = () => {
     return(
         <div className="body">
             <div className="search">Search</div>
-            <div className="res-container">
-                <RestaurantCard />
+            <div className="res-container" >
+                <RestaurantCard
+                    resName="Lund Foods"
+                    cuisine="Chut ka Pani , North Indian"
+                />
+                <RestaurantCard 
+                    resName="Chut Foods"
+                    cuisine="thailandi Chut , BSDK"
+                />
+                
             </div>
         </div>
         
     )
 }
 
-const RestaurantCard = () =>
-{
-    return(
-        <div className="res-card">
-            <h1>Lund Foods</h1>
-            <div className="res-img">
 
-            </div>
-        </div>
-
-    )
-}
 
 const Applayout = () => {
     return(

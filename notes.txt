@@ -119,3 +119,37 @@ CORS is used to manage cross-origin requests.
 
 38. The code readabilty of the code is due to JSX and not React because react makes the code complicated 
     through the entire creation by createElement process.
+
+39. So remember always that when we are returning the JSX from the componenet , then we
+    have to keep the bracket on the same line of the return statement and not in the next
+    line or else it gives "Code unreachbale error".
+
+40. Props or properties are just normal arguements to a fucntion.
+
+41. So when we are declaring props , we can use both types of object usage in javascript,
+    one is using the normal types like --> functionName = (props) =>{
+        const {name , cuisine} = prop;
+    }
+
+    now this above one is called destrcuturing of js objects. So by destrcuturing , we are
+    extracting vale from the js objects rather than doing prop.name and all 
+
+    const prop = {
+        name : "Mudit",
+        dick_size : "10 inch",
+        Quote : "I am the Best"
+    }
+
+    instead of prop.name , we do const{name , Quote} = user and then do
+    console.log(name , Quote);
+
+42. Config Driven UI -> All the UI is driven by a config , i.e. we get data from the backend
+    dynamically and then it is rendered by the UI in accordance to the data , dynamically.
+    In a configuration-driven UI, the layout, styles, and other properties of UI elements 
+    are defined in a configuration file or database, which can be easily modified without 
+    requiring changes to the codebase. This approach makes it easier to customize the UI 
+    for user groups or different use cases, without the need for extensive coding.
+
+    We can also understand it as backend driven or API driven UI.
+
+43. 
