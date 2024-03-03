@@ -152,4 +152,12 @@ CORS is used to manage cross-origin requests.
 
     We can also understand it as backend driven or API driven UI.
 
-43. 
+43. Whenever we are looping on a map , we always use a "key" keyword to iterate.
+
+44. We use key because in the ReactDOM tree structure , if a node is added to the , in this
+    case a new Restaurant is added , it will have re render all the res due to react
+    render cycle and thats why it gives a warning , but if we give them an unique ID,
+    so now react knows that those IDs already exist and it does not render all the keys
+    required.
+
+45. React says that never use index as keys.
