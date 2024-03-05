@@ -1,0 +1,169 @@
+1. A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+2. Crossorigin -> Web pages often make requests to load resources on other servers. Here is where CORS comes in.
+A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+CORS is used to manage cross-origin requests.
+
+3. The reason of 2 files is that First file has the core modules of react and the other file has the DOM operations of the HTML and CSS.
+
+4.  const heading = React.createElement("h1" , {} , "Hello World from React"); -> {} has the attributes inside
+    for example {id : loda}
+
+5. React.CreateElement is basically an Object and it becomes an HTML at the behind by the React
+
+6. So , React is a not a framework , but a library , this is proved even by the fact that
+   we can use react for a just a single attribute and not requiering the entire appendChild
+   to be created unlike Angular and other frameworks
+
+7. npm is the package manager for javascript.
+
+8. Dependencies are the packages on which our project is dependent on to be requiering
+
+9. Bundler basically packages your code(minifies it) so that you can ship it to production
+
+10. There are generally 2 types of Dependencies , Dev and normal , Dev is generally used in
+    Dev envrionment while we use normal one in prod.
+
+11. for example 'npm install -D parcel' -> here means we are installing parcel for the Dev
+    envrionment.
+
+12. '^' (caret) -> it automamtically updates to a minor version
+    '~' (tilde) -> it automattically updates to a major version
+
+13. Trabsitive Dependencies -> When a dependency requires another dependency to run
+
+14. If we open the folders of the node_modules , we will see each folder(dependency) , will
+    have there own package.json.
+
+15. If we have package.json and package-lock.json , we can easily get back the node_modules by just typing
+    'npm install' because npm maps from the package.json and package-lock.json and gets those Dependencies in the
+    node_modules folder
+
+16. Major difference between npm and npx is that npm is package manager and we use it to
+    to install a dependency while when we want to execute that particular dependency , we use
+    npx for it
+
+17. We generally avoid CDNs for calling react because CDN calling is a network call and it is
+    computationally expensive so we avoid it.
+
+18. parcel
+
+    - Dev Build
+    - Creates Local servers
+    - HMR => Hot Module Replacement
+    - HMR is achived through File watching Algoritm (written in C++)
+    - Caching - Faster build (in .parcel-cache)
+    - Image optimization
+    = Minification
+    - Bundling
+    - Compress
+    - Consistent Hashing
+    - Code Splitting
+    - Differential Bundling -> Support older browser
+    - Diagonstic
+    - Error handling
+    - https
+    - Tree shaking - removes unused code
+    - Different dev and prod bundles
+
+19. There is a common error in which when we do 'npx parcel build index.html' , it will
+    give an error becuase in package.json there is "main" mentioned as app.js and that 
+    conflicts with ur parcel build wehn u try to build it.
+
+20. When we do prod build , it builds the compressed prod build files in .dist folder and
+    those files can be pushed on to the production server
+
+21. Read about Browsers List
+
+22.  When we are doing React.createElement , we are crerating an object and for example
+    in the index.html , there is a id with heading , so that createElement will Replacement
+    the heading tag declared in the HTMl.
+
+23. JSX is not HTML in Javascript , JSX can be said as HTML like syntax
+
+24. Browsers dont understand JSX , its parcel which is doing all this for us.
+
+25. So what basically parcel is doing here is that it is transpiling the code of JSX to
+    ES6(which browsers understand) , transpiling is done by "Babel" which is a package
+    downloaded by parcel for us and used by parcel to do the transpilation.
+
+26. In the background , both JSX and react element are the same when transpiled.
+
+27. Babel takes the JSX and behind the scene does React.createElement. Can be checked optimization
+    babel's website
+
+28. In JSX we use camelCase as the attributes.
+
+29. We have to wrap multi line JSX code in {}
+
+30. Always remember that whenever we declare a functional component , start it with the 
+    capital letter , its the react way of understanding it.
+
+31. Functional component is just a JS function which returns JSX.
+
+32. component compostion -> Its basically when we are injecting one component into another. 
+    when we use <component_name />
+
+33. Inside a component , if we declare '{}' , then we can write vanilla js into those curly braces.
+
+34. Using <Component_name /> , we can use this to inject a component inside an Element and using {Element_name}
+    we can inject an element into the component.
+
+35. Whenever there is data binded in the {} , JSX prevents the cross site web attacks or injection attacks.
+
+36. When we inject a component inside of a component we use <component_name /> but we can also use 
+    <component_name></component_name> like we do in HTML and it works the same.
+
+37. We can also call a component inside of component by using {component_name()} because functional component
+    is a js function at the end of the day that returns JSX and we can technically use it as a js function.
+
+38. The code readabilty of the code is due to JSX and not React because react makes the code complicated 
+    through the entire creation by createElement process.
+
+39. So remember always that when we are returning the JSX from the componenet , then we
+    have to keep the bracket on the same line of the return statement and not in the next
+    line or else it gives "Code unreachbale error".
+
+40. Props or properties are just normal arguements to a fucntion.
+
+41. So when we are declaring props , we can use both types of object usage in javascript,
+    one is using the normal types like --> functionName = (props) =>{
+        const {name , cuisine} = prop;
+    }
+
+    now this above one is called destrcuturing of js objects. So by destrcuturing , we are
+    extracting vale from the js objects rather than doing prop.name and all 
+
+    const prop = {
+        name : "Mudit",
+        dick_size : "10 inch",
+        Quote : "I am the Best"
+    }
+
+    instead of prop.name , we do const{name , Quote} = user and then do
+    console.log(name , Quote);
+
+42. Config Driven UI -> All the UI is driven by a config , i.e. we get data from the backend
+    dynamically and then it is rendered by the UI in accordance to the data , dynamically.
+    In a configuration-driven UI, the layout, styles, and other properties of UI elements 
+    are defined in a configuration file or database, which can be easily modified without 
+    requiring changes to the codebase. This approach makes it easier to customize the UI 
+    for user groups or different use cases, without the need for extensive coding.
+
+    We can also understand it as backend driven or API driven UI.
+
+43. Whenever we are looping on a map , we always use a "key" keyword to iterate.
+
+44. We use key because in the ReactDOM tree structure , if a node is added to the , in this
+    case a new Restaurant is added , it will have re render all the res due to react
+    render cycle and thats why it gives a warning , but if we give them an unique ID,
+    so now react knows that those IDs already exist and it does not render all the keys
+    required.
+
+45. React says that never use index as keys.
+
+46. If we have to export multiple files from the same componeent , then we just declare
+    export before the constant we want to export. This export is called Named export
+    the other one is default export.
+
+47. 
