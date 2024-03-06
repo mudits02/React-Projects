@@ -3,7 +3,7 @@
   import RestaurantCard from "./RestaurantCard";
   import restaurantList from "../utils/mockData";
   
-  const Body = () => {
+  export const Body = () => {
     return (
       <div className="restaurant-list">
         {restaurantList.map((restaurant) => {

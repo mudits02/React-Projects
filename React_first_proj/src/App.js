@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./componenets/Header"
 import Body from "./componenets/Body"
-import RestaurantCard from "./componenets/RestaurantCard";
 
 const Header = () => {
     return(
