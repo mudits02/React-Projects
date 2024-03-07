@@ -166,4 +166,6 @@ CORS is used to manage cross-origin requests.
     export before the constant we want to export. This export is called Named export
     the other one is default export.
 
-47. 
+47. We can use default export and named export together.
+
+48. 

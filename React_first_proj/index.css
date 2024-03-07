@@ -39,3 +39,8 @@
 .res-logo{
     width: 190px;
 }
+
+.top-rated-btn{
+    margin: 10px;
+    cursor: pointer;
+}

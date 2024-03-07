@@ -11,6 +11,7 @@
   "author": "Mudit Shukla",
   "license": "ISC",
   "devDependencies": {
+    "babel-plugin-react-html-attrs": "^3.0.5",
     "parcel": "^2.11.0",
     "process": "^0.11.10"
   },
