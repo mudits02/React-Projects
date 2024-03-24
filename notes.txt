@@ -168,4 +168,7 @@ CORS is used to manage cross-origin requests.
 
 47. We can use default export and named export together.
 
-48. 
+48. Temporal dead zone is basically the time period in which a let variable is hoisted and 
+    till it was initalized.
+
+49. 
