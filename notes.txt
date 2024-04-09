@@ -104,6 +104,12 @@ CORS is used to manage cross-origin requests.
 32. component compostion -> Its basically when we are injecting one component into another. 
     when we use <component_name />
 
+33. JSX => React.createElement => ReactElement(Js Object) => HTMLElement(render)
+
+34. While React.createElement was => ReactElement(Js object) =>HTMlElemenet(render)
+
+35. Go to babel documentation to see how it is transpiled.
+
 33. Inside a component , if we declare '{}' , then we can write vanilla js into those curly braces.
 
 34. Using <Component_name /> , we can use this to inject a component inside an Element and using {Element_name}
