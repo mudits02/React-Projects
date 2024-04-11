@@ -126,6 +126,13 @@ CORS is used to manage cross-origin requests.
 38. The code readabilty of the code is due to JSX and not React because react makes the code complicated 
     through the entire creation by createElement process.
 
+39. Cross Site Scripting -> Type of malicious injection where the attacker tries to attack by sending
+    malicious scripts using the web app (Cna be done for example we use the api call in the {} tag
+    while we are calling a data since {} allows to inject js inside our componeent). Now this will
+    not happen as JSX kind of sanitizes it , so JSX checks and prevents Cross Site Scripting(XSS).
+
+40. In componeent compostion , <Title /> and <Title> </Title> and {Title()} are the same thing
+
 39. So remember always that when we are returning the JSX from the componenet , then we
     have to keep the bracket on the same line of the return statement and not in the next
     line or else it gives "Code unreachbale error".
