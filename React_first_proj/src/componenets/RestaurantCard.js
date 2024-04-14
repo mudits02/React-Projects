@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
-
+//We are destructuring the props in the below format
 const RestaurantCard = ({
     cloudinaryImageId,
     name,

@@ -181,3 +181,8 @@ CORS is used to manage cross-origin requests.
 
 47. We can use default export and named export together.
 
+48. when we are passing the Js object of json to the body ,  bascailly <Restaurant resData={reObj}/>
+    then we will use resObj to pass and in the res-card , we will use resData as the props.
+
+49. 
+
