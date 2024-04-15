@@ -9,28 +9,11 @@ import restaurantList from "../utils/mockData";
     return (
       <div className="body">
 
-        <div className="filter">
-          <button className="top-rated-btn" onClick=
-          {
-            () =>
+      <div className="search">Seacrh</div>
 
-            {
-              restaurantList = restaurantList.filter
-              (
-                (res) => res.data.avgRating > 4
-              );
-
-              console.log(restaurantList);
-            }
-          }
-          >
-            Top Rated restaurant
-          </button>
-        </div>
-
-        <div className="res-container">
+      <div className="res-container">
           {restaurantList.map((restaurant) => {
-            return <RestaurantCard key={restaurant.data.id} {...restaurant.data} />;
+            return <RestaurantCard key={restaurant.data.id} resData={restaurant} />;
           })}
         </div>
       </div>

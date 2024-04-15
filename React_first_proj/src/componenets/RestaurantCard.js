@@ -1,15 +1,17 @@
 import { CDN_URL } from "../utils/constants";
 
 //We are destructuring the props in the below format
-const RestaurantCard = ({
-    cloudinaryImageId,
-    name,
-    cuisines,
-    area,
-    lastMileTravelString,
-    costForTwoString,
-    avgRating,
-  }) => {
+const RestaurantCard = (props) => {
+
+    const {resData} = props;
+    const{
+      cloudinaryImageId,
+      name,
+      avgRating,
+      cuisines,
+      costForTwo,
+      deliveryTime
+    } = resData?.data;
     return (
       <div className="card">
         <img
@@ -20,11 +22,10 @@ const RestaurantCard = ({
         />
         <h2>{name}</h2>
         <h4>{cuisines.join(", ")}</h4>
-        <h4>{area}</h4>
         <span>
           <h4><i className="fa-solid fa-star"></i>{avgRating}</h4>
-          <h4>{lastMileTravelString}</h4>
-          <h4>{costForTwoString}</h4>
+          <h4>{costForTwo}</h4>
+          <h4>{deliveryTime}</h4>
         </span>
       </div>
     );
