@@ -9,7 +9,15 @@ import restaurantList from "../utils/mockData";
     return (
       <div className="body">
 
-      <div className="search">Seacrh</div>
+      <div className="search">Filter
+        <button 
+        className="filter-btn" onClick={() => {
+          alert("Filter button activated");
+        }}>
+          Top Rated
+        </button>
+      </div>
+
 
       <div className="res-container">
           {restaurantList.map((restaurant) => {

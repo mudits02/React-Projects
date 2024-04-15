@@ -13,8 +13,10 @@ const RestaurantCard = (props) => {
       deliveryTime
     } = resData?.data;
     return (
-      <div className="card">
+      <div className="res-card">
         <img
+          className="res-logo"
+          alt="res-logo"
           src={
             CDN_URL +
             cloudinaryImageId
