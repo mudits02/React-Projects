@@ -184,5 +184,13 @@ CORS is used to manage cross-origin requests.
 48. when we are passing the Js object of json to the body ,  bascailly <Restaurant resData={reObj}/>
     then we will use resObj to pass and in the res-card , we will use resData as the props.
 
-49. 
+49. Hooks -> Normal JS utility functions.
+
+50. 2 Major Hooks used in Reatc -> useState() and useEffect()
+
+51. useState() -> Superpowerful state variables.
+
+52.  Whenever a state variable updates , React re renders the componenet.
+
+
 
