@@ -192,5 +192,31 @@ CORS is used to manage cross-origin requests.
 
 52.  Whenever a state variable updates , React re renders the componenet.
 
+53. Read about Reconcilitaion Algoritm (React fiber) in my notebook and also the internet.
+
+54. Virtual DOM is the representation of the DOM. If we do say console.log(<Body />) , we will
+    see the virtual dom being printed in the console. It will be print as a React Element(like an
+    object). So that object is the React Virtual DOM. Its a normal JS object.
+
+55. Diff Algorithm basically finds the difference between the old virtual DOM and the new virtual
+    DOM created after the event or whatever. Its like 'git diff'.
+
+56. To read more about react fiber -> https://github.com/acdlite/react-fiber-architecture
+
+57. For a better User Experience , in React we render the webpage twice , demo below
+
+    Page Load => Render => API call => Re Render.
+
+58. useEffect(Callback_Function , dependency_array) -> useEffect(() => {} , []); -> Basic syntax
+
+59. The callback function will be called when the main componenet is rendered or it ends its render
+    cycle.
+
+60. When we directly call the swiggy API and use fetch() and then we log the in the json format
+    it throws an error called "CORS policy blocked" ,  becuase we are fetching the Swiggy API
+    from our localhost. Now the browsers doesnt allow API call from one origin to another.
+
+61. 
+
 
 
