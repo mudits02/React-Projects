@@ -190,7 +190,7 @@ CORS is used to manage cross-origin requests.
 
 51. useState() -> Superpowerful state variables.
 
-52.  Whenever a state variable updates , React re renders the componenet.
+52. Whenever a state variable updates , React re renders the componenet.
 
 53. Read about Reconcilitaion Algoritm (React fiber) in my notebook and also the internet.
 

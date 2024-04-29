@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./componenets/Header"
-import Body from "./componenets/Body"
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 // RestaurantList is JSON Data for displaying cards
 
