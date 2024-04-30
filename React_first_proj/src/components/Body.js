@@ -3,10 +3,11 @@
 import RestaurantCard from "./RestaurantCard";
 import restaurantList from "../utils/mockData";
 import {useState , useEffect} from "react"; // Named import
+import Shimmer from "./Shimmer";
 
   export const Body = () => {
 
-    const [listOfRestaurants , setListOFRestaurants] = useState(restaurantList);
+    const [listOfRestaurants , setListOFRestaurants] = useState([]);
 
     useEffect(() => {
       fetchData();
@@ -18,17 +19,17 @@ import {useState , useEffect} from "react"; // Named import
 
       const json = await data.json();
 
-      const restaurants = json?.data?.cards[1].card.card.gridElements.infoWithStyle.restaurants[1].info;
-      
+      const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+      //console.log(restaurants);
     // Setting the list of restaurants in state
     setListOFRestaurants(restaurants);
 
     };
 
-    // if(listOfRestaurants.length === 0)
-    // {
-    //   return <h1>Loading......</h1>
-    // }
+    if(listOfRestaurants.length === 0)
+    {
+      return <Shimmer />
+    }
 
     return (
       <div className="body">
@@ -47,11 +48,12 @@ import {useState , useEffect} from "react"; // Named import
           Top Rated
         </button>
       </div>
+      
 
 
       <div className="res-container">
           {listOfRestaurants.map((restaurant) => {
-            return <RestaurantCard key={restaurant.data.id} resData={restaurant} />;
+            return <RestaurantCard key={restaurant.info.id} resData={restaurant} />;
           })}
         </div>
       </div>
