@@ -216,7 +216,48 @@ CORS is used to manage cross-origin requests.
     it throws an error called "CORS policy blocked" ,  becuase we are fetching the Swiggy API
     from our localhost. Now the browsers doesnt allow API call from one origin to another.
 
-61. 
+61. Why do we need state variables in React(using hooks basically). In the example where we have to
+    change the name of login button to logout when we click. When we do it using the normal way,
+    using onlcick and using a callback function , it doesnt reflect on the screen but gets logged
+    on the console. This is because to get the variable to be changed , we need to refresh the
+    componenet and for that we need state variables so whenever the name of the button changes,
+    we have to update it and thats where we need state variables.
+
+62. So basically when we use useState , what react does is that it re renders the componenet once
+    we set the state of the hook. and it basically re renders the entire componenet. example
+    Header component is re rendered when we click the login button.
+
+63.  Important question , how are we able to change the const variable in the useState?
+
+    This happens because when we click on the button , the component gets re rendered and the 
+    value of the new button gets changed, basically the entire component is refreshed. basically
+    the value gets updated as it gets re rendered.
+
+64. And this re rendering is fast because using the React fiber, react just sees that there is change
+    of DOM only in the button as it compares the DOM tree generated and hence re renders it fast and
+    although the component re-renders but only the changed part in a way changes,so it is faster.
+
+65. When it finds the difference between the old and new virtual DOM , it is called Reconcilitaion.
+
+66. For the search feature , what is happening is that are binding the search text with the value
+    of the input box. Means if we change something in the inputbox , that updates in the searchtext
+    and gets stored. onChange triggers whenever there is a change in the value and that is updated
+    by the e.target.value and we set that whenever somethign changes.
+
+67. With each letter we are typing the search button , we are actually re redering the component
+    because as we type, our local state variable is getting updated.
+
+68. Whenever state variable updates , react triggers a Reconcilitaion cycle (re-renders the component)
+
+69. Repeating again , it does it so fast because it is finding the difference between older V DOM 
+    and new Virtual DOM.
+
+70. So we used another state variable in the list of res and filtered list of res because we will
+    keep the listOfRestaurants intact while setting the filteredList. When we search for the 
+    and filter it , we are always filtering the listOfRestaurants but we are updating
+    filteredList and also displaying the filteredList.
+
+CONTINUED IN NOTES2.TXT
 
 
 

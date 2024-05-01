@@ -1,0 +1,10 @@
+Started from Routes
+
+1. useEffect Hook is called after every component render. Also the dependency array inside it is
+    not compulsory to be declared there. 
+
+    dependency array conditions
+        i. When the array is not declared -> The callback function is called everytime the component
+           gets rendered.
+
+        ii. When the array is declared but its empty -> 
