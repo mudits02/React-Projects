@@ -63,11 +63,11 @@ import Shimmer from "./Shimmer";
         <button 
         className="filter-btn" onClick={() => {
           const filteredList = listOfRestaurants.filter((res) => 
-            res.data.avgRating > 4
+            res.info.avgRating > 4
             //console.log(res);
           );
  
-          setListOFRestaurants(filteredList);
+          setfilteredResList(filteredList);
           
         }}>
           Top Rated

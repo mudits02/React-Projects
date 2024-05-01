@@ -1,10 +1,35 @@
 Started from Routes
 
 1. useEffect Hook is called after every component render. Also the dependency array inside it is
-    not compulsory to be declared there. 
+   not compulsory to be declared there. Also if we use useEffect before the console.log("Header")
+   , the output will be Header Name and then the callback of the useEffect. 
+
 
     dependency array conditions
         i. When the array is not declared -> The callback function is called everytime the component
            gets rendered.
 
-        ii. When the array is declared but its empty -> 
+        ii. When the array is declared but its empty -> Callback is called only once , in the initial
+            render only and not after that.
+
+        iii. When there is say a local state variable in the array, then the callback is called
+             everytime the variable is updated.
+
+2. Never use useState inside a if else condition or for loops, it throws error
+
+3. Configuration in routing means that information that will define what will happen in a specific
+   route.
+
+4. RouterProvider will give the routing config to the page.
+
+5. When we are using <Outlet /> , then the component of the children route will be rendered, in after
+   a way we are dynamically routing and this is done to keep the header fixed and not change.
+
+6. Outlet component gets replaced whenever we go that speific route.
+
+7. We dont use anchor tag in react to navigate to pages, this is because when we use the anchor tag
+   it reloads the entire page and that is something we dont want to as it reduces the speed.
+
+8. We use <Link> </Link> to redirect to the another page instead because it does not reload the onChange
+   
+9. 

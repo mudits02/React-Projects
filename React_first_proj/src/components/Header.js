@@ -1,9 +1,13 @@
 import { LOGO_URL } from "../utils/constants.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
     const [btnNameReact , setBtnNameReact] = useState("Login");
+    useEffect(() => {
+        console.log("useEffect called");
+    }, [btnNameReact]);
     console.log("Header Rendered"); // whenever we click login button, it logs this.
     //let btnName = "Login";
 
@@ -15,10 +19,10 @@ const Header = () => {
 
             <div className="nav-items">
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Madarchod</li>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/contact">Contact Us</Link>
+                    <li>Cart</li>
                     <button className="login" 
                     onClick= {() => 
                         btnNameReact === "Login" ? 
