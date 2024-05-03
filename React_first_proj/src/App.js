@@ -4,8 +4,10 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Error from "./components/Error"
+import Error from "./components/Error";
+import ResMenu from "./components/RestMenu";
 import {createBrowserRouter , RouterProvider , Outlet} from "react-router-dom";
+
 
 
 // RestaurantList is JSON Data for displaying cards
@@ -38,6 +40,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact />,
+            },
+            {
+                path: "/restaurant/:resId",
+                element: <ResMenu />,
             },
         ],
         errorElement: <Error />,

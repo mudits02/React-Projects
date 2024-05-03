@@ -32,4 +32,17 @@ Started from Routes
 
 8. We use <Link> </Link> to redirect to the another page instead because it does not reload the onChange
    
-9. 
+9. So when we are using the Link, then we are not reloading the page , we are just refreshing the
+   component of the app.js and the components just get replaced when go to that specific route.
+
+10. That is why React is called Single Page Application coz we actually using a single page and
+    just defining routes and it just gets refreshed in the same page.
+
+11. There are 2 tpyes of routing 
+    i. Server Side Routing -> When we making a network call and then we get a HTML page
+       basically when we are using anchor tag is an example.
+
+    ii. Client Side Routing -> When we are just routing to different components inside the 
+        client side application.
+
+12. 
