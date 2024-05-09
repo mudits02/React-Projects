@@ -45,4 +45,6 @@ Started from Routes
     ii. Client Side Routing -> When we are just routing to different components inside the 
         client side application.
 
-12. 
+12. In react class based component , the constructor is the best place to create state variables.
+
+13. 
