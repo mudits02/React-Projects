@@ -47,4 +47,47 @@ Started from Routes
 
 12. In react class based component , the constructor is the best place to create state variables.
 
-13. 
+13. Never update state variables directly.
+
+14. Only the state variables in the this.setState are actually changed and the others are
+   are not changed.
+
+15. In child based components , the order of call is
+    constructor => render() => componentDidMount()
+
+16. For a component to be mounted in ReactJS it means to be initialized and inserted in the DOM.
+    Mounting is the initial phase in which the instance of the component is created and inserted
+    into the DOM. When the component gets successfully inserted into the DOM, the component is said
+    to be mounted
+
+17. Mounting occurs when a component is first added to the page, while rendering occurs when a 
+    component's state changes. Mounting initializes the component and sets it up for interaction,
+    while rendering updates the component's view based on changes to its state.
+
+18. componentDidMount is used for making an API call.
+
+19. Refer wojtekmaj react react lifecycle , below link
+
+20. https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+21. Why we see componentDidMount being called afterwards even in the case of child component
+    because , react first completes the render phase of all the components and then it will
+    run the componentDidMount of all the components , this is done by React for optimization.
+
+22. Also the render phases of child components are batched or clubbed basically.
+
+23. This is done because commit phase(whe didMount is implemented) is very costly computationally
+    coz we are manipulating the DOM and that DOM manipulation is costly so it does it together
+    at the end (reonciliation algo)
+
+24. Read the console log in the About Us page and also see the lifecycle diagram for explaination.
+
+25. componentWillUnmount() is called when the page is unmounted.
+
+26. Unmounted means when the component goes away from the browser(when we switch to another page)
+
+27. As soon as we say change to another page , componentWillUnmount() is called.
+
+28. Point to remember that never compare the react lifecycle to react functional component.
+
+29. In a crux ,  its the single page , we are just chaging the component in React.
