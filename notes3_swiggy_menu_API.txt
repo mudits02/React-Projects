@@ -1,0 +1,10 @@
+These are the steps to follow to get the swiggy menu API.
+
+Follow these steps.
+1. open swiggy website. (Dont open developer inspect menu yet)
+
+2. scroll down to Restaurants with online food delivery. here you will see all the restaurant lists
+
+3. Now open developer inspect menu. > network > fetch/xhr
+
+4. Now click on the restaurant card

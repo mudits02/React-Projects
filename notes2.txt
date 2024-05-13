@@ -91,3 +91,14 @@ Started from Routes
 28. Point to remember that never compare the react lifecycle to react functional component.
 
 29. In a crux ,  its the single page , we are just chaging the component in React.
+
+30. path: "/restaurant/:resId" -> In this :resId is dynamic means it can be changed dynamically.
+
+31. useParams helps to access the parameters of the current route to manage the dynamic routes
+    in the URL
+
+32. Key should always be on the parent jsx whenever we are using jsx tag over jsx tag
+
+33. <Limk> </Link> is basically a wrapper over anchor tag <a href= > </a> which is provided to us by
+    the react-router-dom library and when we see the transpiled Link tag in console , it shows us
+    the anchor tag.
