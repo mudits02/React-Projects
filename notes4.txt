@@ -1,0 +1,17 @@
+1. Chunking / Code Splitting / Lazy Loading -> they are the same thing..
+
+2. The reason for which why we do this is because there is a bundled js file of all the components
+   in the JS tab of the developers tools which actually holds all the bundled code of the React we
+   have written. So, we are breaking down down it into smaller peices coz if that file is too large
+   , it will take time to load on the website because of many API calls on the same file
+
+3. This might be not observable in small scale projects , but when we take to large scales
+   it takes a lot of time to load.
+
+4. Lazy loading means waiting to render content on a webpage until the user or the browser needs
+   it. Lazy loading can help speed up webpage load times.
+
+5. If we directly implement lazy-loading in react , it will give an error of component suspended
+   This is because it takes a very short time period to load that Component or group of 
+   component to load and it doesnt , so we use <Suspense></Suspense> and wrap our component that
+   is to be lazy loaded around it where we are creating routes for our project.
