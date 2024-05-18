@@ -102,3 +102,8 @@ Started from Routes
 33. <Limk> </Link> is basically a wrapper over anchor tag <a href= > </a> which is provided to us by
     the react-router-dom library and when we see the transpiled Link tag in console , it shows us
     the anchor tag.
+
+34. Single Responsibility Principle means that when we are breaking down the code into smaller
+    components where each component has in a way has only 1 task to do(Modular approach).
+
+35. 

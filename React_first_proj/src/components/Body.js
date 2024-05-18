@@ -5,36 +5,18 @@ import {useState , useEffect} from "react"; // Named import
 import Shimmer from "./Shimmer";
 import { API_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
   export const Body = () => {
 
     const [listOfRestaurants , setListOFRestaurants] = useState([]);
     const [filteredResList , setfilteredResList] = useState([]);
     const [searchText , setSearchText] = useState("");
-    const [position, setPosition] = useState({ latitude: null, longitude: null });
+
+    
     useEffect(() => {
       fetchData();
     } , []);
-    
-
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        setPosition({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-        });
-      });
-    } 
-  }, []);
-
-    const latitude = position.latitude;
-    const longitude = position.longitude;
-
-    console.log(latitude);
-    console.log(longitude);
-    
-
     const fetchData = async () => {
       const data = await fetch(API_URL);
 
@@ -47,6 +29,16 @@ import { Link } from "react-router-dom";
     setfilteredResList(restaurants);
 
     };
+
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false)
+    {
+      return(
+        <h1>Looks like you are Offline , Check your Internet</h1>
+      )
+    }
+
+
 
     // This is called Condition rendering
     // if(listOfRestaurants.length === 0)
