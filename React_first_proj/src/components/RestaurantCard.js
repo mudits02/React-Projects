@@ -13,16 +13,16 @@ const RestaurantCard = (props) => {
       deliveryTime
     } = resData?.info;
     return (
-      <div className="res-card">
+      <div className="m-4 p-4 w-[250px] bg-gray-100 hover:bg-gray-200" >
         <img
-          className="res-logo"
+          className="w-[200px] h-[200px] rounded-lg"
           alt="res-logo"
           src={
             CDN_URL +
             cloudinaryImageId
           }
         />
-        <h2>{name}</h2>
+        <h2 className="font-bold py-4 text-lg">{name}</h2>
         <h4>{cuisines.join(", ")}</h4>
         <span>
           <h4><i className="fa-solid fa-star"></i>{avgRating}</h4>
@@ -31,6 +31,17 @@ const RestaurantCard = (props) => {
         </span>
       </div>
     );
+  };
+
+  export const withpromotedLabel = (RestaurantCard) => {
+    return () => {
+      return(
+        <div>
+          <label>Promoted</label>
+          <RestaurantCard />
+        </div>
+      );
+    };
   };
 
   export default RestaurantCard;

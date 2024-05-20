@@ -15,3 +15,13 @@
    This is because it takes a very short time period to load that Component or group of 
    component to load and it doesnt , so we use <Suspense></Suspense> and wrap our component that
    is to be lazy loaded around it where we are creating routes for our project.
+
+6. For tailwind , if we have to give a width or height of specific pixels , then syntax is
+    w-[200px] or h[200px]
+
+7. Higher Order Component -> It is js function that takes a component and returns a component.
+
+8. Like for example , if we want to add a small layer of promoted on top of the promoted restaurantList
+   then we can use HoC or Higher Order Component
+
+9. 

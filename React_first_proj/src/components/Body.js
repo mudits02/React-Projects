@@ -54,14 +54,14 @@ import useOnlineStatus from "../utils/useOnlineStatus";
     : (
       <div className="body">
 
-      <div className="filter">
-        <div className="search">
-          <input type="text" className="search-box" value={searchText} 
+      <div className="flex items-center space-x-2">
+        <div className="m-4 p-4">
+          <input type="text" className="border border-black p-2 rounded-lg" value={searchText} 
           onChange={(e) => {
             setSearchText(e.target.value); 
           }} />
 
-          <button className="search-btn" 
+          <button className="p-4 bg-green-100 m-4" 
           onClick={() => {
             const filteredRes = listOfRestaurants.filter( (res) => {
               return res.info.name.toLowerCase().includes(searchText.toLowerCase());
@@ -73,7 +73,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
           }}>Search</button>
         </div>
         <button 
-        className="filter-btn" onClick={() => {
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded h-10 w-32 py-2 px-4 my-4 mx-4" onClick={() => {
           const filteredList = listOfRestaurants.filter((res) => 
             res.info.avgRating > 4
             //console.log(res);
@@ -88,7 +88,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
       
 
 
-      <div className="res-container">
+      <div className="flex flex-wrap">
       {filteredResList.map((restaurant) => (
           <Link
             to={"/restaurant/" + restaurant.info.id}
