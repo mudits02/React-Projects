@@ -1,6 +1,6 @@
 // Body Component for body section: It contain all restaurant cards
 // We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard , {withpromotedLabel}from "./RestaurantCard";
 import {useState , useEffect} from "react"; // Named import
 import Shimmer from "./Shimmer";
 import { API_URL } from "../utils/constants";
@@ -13,6 +13,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
     const [filteredResList , setfilteredResList] = useState([]);
     const [searchText , setSearchText] = useState("");
 
+    const RestaurantCardPromoted = withpromotedLabel(RestaurantCard);
     
     useEffect(() => {
       fetchData();
@@ -94,7 +95,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
             to={"/restaurant/" + restaurant.info.id}
             key={restaurant.info.id}
           >
-            <RestaurantCard resData={restaurant} />
+            {restaurant.info.promoted ? <RestaurantCardPromoted resData={restaurant}  /> : <RestaurantCard resData={restaurant} />}
           </Link>
         ))}
         </div>

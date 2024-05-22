@@ -24,4 +24,6 @@
 8. Like for example , if we want to add a small layer of promoted on top of the promoted restaurantList
    then we can use HoC or Higher Order Component
 
-9. 
+9.  HoC are pure functions.
+
+10. 
