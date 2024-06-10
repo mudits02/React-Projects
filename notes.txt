@@ -30,7 +30,7 @@ CORS is used to manage cross-origin requests.
 12. '^' (caret) -> it automamtically updates to a minor version
     '~' (tilde) -> it automattically updates to a major version
 
-13. Trabsitive Dependencies -> When a dependency requires another dependency to run
+13. Transitive Dependencies -> When a dependency requires another dependency to run
 
 14. If we open the folders of the node_modules , we will see each folder(dependency) , will
     have there own package.json.
@@ -211,6 +211,9 @@ CORS is used to manage cross-origin requests.
 
 59. The callback function will be called when the main componenet is rendered or it ends its render
     cycle.
+
+60. When you call useEffect, you’re telling React to run your “effect” function after flushing 
+    changes to the DOM
 
 60. When we directly call the swiggy API and use fetch() and then we log the in the json format
     it throws an error called "CORS policy blocked" ,  becuase we are fetching the Swiggy API

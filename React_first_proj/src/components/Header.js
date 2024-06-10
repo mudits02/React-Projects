@@ -13,6 +13,8 @@ const Header = () => {
     console.log("Header Rendered"); // whenever we click login button, it logs this.
     //let btnName = "Login";
 
+    const [altBtn , setAltBtn] = useState("logout");
+
     return(
         <div className="flex justify-between bg-pink-100 shadow-lg mb-2">
             <div className="logo-container">
@@ -50,6 +52,18 @@ const Header = () => {
                         setBtnNameReact("Login")
                         }>
                     {btnNameReact}
+                    </button>
+
+                    <button  className="login"
+                    onClick={() => {
+                        if(altBtn == "logout"){
+                            setAltBtn("loginM");
+                        }
+                        else{
+                            setAltBtn("logout");
+                        }
+                    }}>
+                        {altBtn}
                     </button>
                 </ul>
             </div>
